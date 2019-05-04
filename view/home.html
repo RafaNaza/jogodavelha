@@ -1,0 +1,97 @@
+<article class="_jogo">
+    <h1>Jogo da Velha</h1> 
+
+    <div class="alert alert-info">
+        - <strong> <i class="fas fa-times"></i> </strong>  Inicia o jogo.
+    </div>
+
+    <div class="row">
+        <div class="col-12	col-md-6">
+            <!-- CONFIG -->
+            <div style="padding:10px 0; text-align:right;">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td colspan="2" style="text-align: left;">
+                            <div class="form-group">
+                                <legend>Selecione a dificuldade:</legend>
+                                <select id="jv_nivel" class="form-control">
+                                    <option value="0" selected>Fácil</option>
+                                    <option value="1">Médio</option>
+                                    <option value="2">Difícil</option>
+                                </select>
+                            </div>
+                            <div id="msg_nivel"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <table style="width:100%;">
+                                <tr>
+                                    <th>
+                                        Toque seu marcador
+                                    </th>
+                                    <td>
+                                        <label> 
+                                            <i style="font-size:26px;" class="fas fa-times"></i> 
+                                            <input type="radio" name="_jogador_set" value="x" checked />
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label> 
+                                            <i style="font-size:26px;" class="far fa-circle"></i> 
+                                            <input type="radio" name="_jogador_set" value="o" />
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Dificuldade atual:</label>
+                            <span id="jv_nivel_title" class="badge badge-info"></span>
+                        </td>
+                        <td>
+                            <span onclick="javascript: reset();" class="btn btn-primary" style="cursor:pointer;">INICIAR NOVA PARTIDA</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="{index}historico">Ver Histórico</a>
+                        </td>
+                    </tr>
+                </table>    
+            </div>
+        </div>
+
+        <div class="col-12	col-md-6">
+            <!-- TABULEIRO -->
+            <div class="_table_">
+                <ul>
+                    <li class="jv_cell" id="11" data-row="1" data-col="1">&nbsp;</li>
+                    <li class="jv_cell" id="12" data-row="1" data-col="2">&nbsp;</li>
+                    <li class="jv_cell" id="13" data-row="1" data-col="3">&nbsp;</li>
+                </ul>
+                <ul>
+                    <li class="jv_cell" id="21" data-row="2" data-col="1">&nbsp;</li>
+                    <li class="jv_cell" id="22" data-row="2" data-col="2">&nbsp;</li>
+                    <li class="jv_cell" id="23" data-row="2" data-col="3">&nbsp;</li>
+                </ul>
+                <ul>
+                    <li class="jv_cell" id="31" data-row="3" data-col="1">&nbsp;</li>
+                    <li class="jv_cell" id="32" data-row="3" data-col="2">&nbsp;</li>
+                    <li class="jv_cell" id="33" data-row="3" data-col="3">&nbsp;</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="col-12 col-sm-12">
+            <div id="_msg" class="_msg alert"></div>
+        </div>
+
+    </div>
+           
+
+</article>

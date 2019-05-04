@@ -1,0 +1,59 @@
+._jogo{
+    margin:0 auto;
+    max-width:800px;
+}
+._table_{
+    display:table;
+    /* background-color: cornflowerblue; */
+    background-color: #d6dae8;
+    width:304px;
+    height:304px;
+    margin: 0 auto;
+    /* border:1px solid #EEE; */
+    border: 5px solid #c9c9c9;
+}
+._table_ ul{
+    display: table-row;
+}
+._table_ ul li{
+    display: table-cell;
+    border-right:2px solid #082285;
+    border-bottom:2px solid #082285;
+    width:33%;
+    cursor:pointer;
+    position:relative;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 30px;
+    -webkit-transition: all .5s; /* Safari */
+    transition: all .5s;
+}
+._table_ ul li:hover{
+    background-color: #4991e1;
+}
+._table_ ul:last-child li{
+    border-bottom:none;
+}
+._table_ ul li:last-child{
+    border-right:none;
+}
+._table_ ul li.travado{cursor: not-allowed;}
+._table_ ul li.vencedor{
+    background-color: #23ae14;
+    color: #FFF;
+}
+._table_ ul li.velha{
+    background-color:#c60e24;
+    color:#EEE; 
+    border-color:#FFF;
+}
+._msg{
+    margin:10px 0;
+}
+footer{
+    padding:10px;
+    margin:6px 0;
+    background-color:#444;
+    color: #FFF;
+    font-size:14px;
+}

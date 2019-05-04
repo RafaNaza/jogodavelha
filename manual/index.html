@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Jogo da Velha - MANUAL DE INSTALAÇÃO</title>
+        <meta name='description' content='Jogo da Velha'/>
+        <meta name='keywords' content='Jogo da Velha'/>
+
+        <meta property='og:title' content='Jogo da Velha'/>
+        <meta property='og:url' content='../'/>
+        <meta property='og:description' content='Jogo da Velha'/>
+        <meta property='og:type' content='website'/>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1"/>
+
+        <!-- FAVICO -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- FAVICO -->       
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/custom.css?d={nocache}">
+    </head>
+    <body>
+        <header></header>
+
+        <section class="_jogo">
+            <h1>Manual de instalação</h1>
+            <article>
+                <h2>1 - Crie a base de dados. </h2>
+                <p>Abra a pasta <i>_sql</i>, nela há um dump para criar a base e a tabela necessária para a aplicação.</p>
+            </article>
+
+            <article>
+                <h2>2 - Configurações. </h2>
+                <p>
+                    Na raiz do projeto, abra em um editor o arquivo <i>config.php</i>.<br>
+                    Na linha 6 você definirá o diretório do projeto. 
+                    No navegador o projeto deverá <br>ficar assim : <a href="http://localhost/jogodavelha">http://localhost/<strong>jogodavelha</strong></a>. <br>
+                    Nas linhas 16,17,18 e 19 deverá informar os dados de conexão ao banco de dados criado previamente.<br>
+                    Veja imagem:<br>
+                    <img src="config.png" style="width:100%; max-width:500px;" />
+                </p>
+            </article>
+
+            <article>
+                <h2>3 - Jogue. </h2>
+                <p>
+                    Agora é só acessar a url da aplicação e jogar a vontade.<br>
+                </p>
+            </article>
+            
+        </section>
+
+        <footer>
+            <p style="text-align:center;">Desenvolvido por : Rafael Nazario de Farias</p>
+        </footer>
+    </body>
+</html>
